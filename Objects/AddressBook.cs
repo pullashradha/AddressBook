@@ -7,32 +7,35 @@ namespace AddressBook.Objects
   {
     private string _firstName;
     private string _lastName;
-    private string _fullName;
     private string _phoneNumber;
     private string _emailAddress;
     private string _streetAddress;
     private string _stateAddress;
-    private string _fullAddress;
     private static List<Contact> _contactsList = new List<Contact> {};
-    public Contact (string firstName, string lastName, string fullName, string phoneNumber, string emailAddress, string streetAddress, string stateAddress, string fullAddress)
+    public Contact (string firstName, string lastName, string phoneNumber, string emailAddress, string streetAddress, string stateAddress)
     {
       _firstName = firstName;
       _lastName = lastName;
-      _fullName = fullName;
       _phoneNumber = phoneNumber;
       _emailAddress = emailAddress;
       _streetAddress = streetAddress;
       _stateAddress = stateAddress;
-      _fullAddress = fullAddress;
     }
-    public string GetFullName()
+    public string GetFirstName()
     {
-      _fullName = (_firstName + " " + _lastName);
-      return _fullName;
+      return _firstName;
     }
-    public void SetFullName(string newFullName)
+    public void SetFirstName(string newFirstName)
     {
-      _fullName = newFullName;
+      _firstName = newFirstName;
+    }
+    public string GetLastName()
+    {
+      return _lastName;
+    }
+    public void SetLastName(string newLastName)
+    {
+      _lastName = newLastName;
     }
     public string GetPhoneNumber()
     {
@@ -50,14 +53,21 @@ namespace AddressBook.Objects
     {
       _emailAddress = newEmailAddress;
     }
-    public string GetFullAddress()
+    public string GetStreetAddress()
     {
-      _fullAddress = (_streetAddress + ", " + _stateAddress);
-      return _fullAddress;
+      return _streetAddress;
     }
-    public void SetFullAddress(string newFullAddress)
+    public void SetStreetAddress(string newStreetAddress)
     {
-      _fullAddress = newFullAddress;
+      _streetAddress = newStreetAddress;
+    }
+    public string GetStateAddress()
+    {
+      return _stateAddress;
+    }
+    public void SetStateAddress(string newStateAddress)
+    {
+      _stateAddress = newStateAddress;
     }
     public static List<Contact> GetAll()
     {

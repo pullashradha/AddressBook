@@ -20,16 +20,15 @@ namespace AddressBook
           Request.Form ["street-address"],
           Request.Form ["state-address"]
         );
+        newContact.Save();
         return View ["contact_created.cshtml", newContact];
       };
-      Post ["/contacts"] = _ => {
-        Contact newContactInList = new Contact ();
-        newContactInList.Save();
-        return View ["contacts.cshtml", newContactInList];
+      Get ["/contacts"] = _ => {
+        List<Contact> newContactList = Contact.GetAll();
+        return View ["contacts.cshtml", newContactList];
       };
       Post ["/contacts_deleted"] = _ => {
-        Contact contactList = new Contact ();
-        contactList.ClearAll();
+        Contact.ClearAll();
         return View ["contacts_deleted.cshtml"];
       };
     }
