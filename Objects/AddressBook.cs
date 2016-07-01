@@ -13,6 +13,7 @@ namespace AddressBook.Objects
     private string _streetAddress;
     private string _stateAddress;
     private string _fullAddress;
+    private static List<Contact> _contactsList = new List<Contact> {};
     public Contact (string firstName, string lastName, string fullName, string phoneNumber, string emailAddress, string streetAddress, string stateAddress, string fullAddress)
     {
       _firstName = firstName;
@@ -57,6 +58,18 @@ namespace AddressBook.Objects
     public void SetFullAddress(string newFullAddress)
     {
       _fullAddress = newFullAddress;
+    }
+    public static List<Contact> GetAll()
+    {
+      return _contactsList;
+    }
+    public void Save()
+    {
+      _contactsList.Add(this);
+    }
+    public static void ClearAll()
+    {
+      _contactsList.Clear();
     }
   }
 }
