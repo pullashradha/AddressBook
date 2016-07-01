@@ -9,8 +9,8 @@ namespace AddressBook
     public HomeModule()
     {
       Get ["/"] = _ => View ["index.cshtml"];
-      Get ["/create_contact"] = _ => View ["create_contact.cshtml"];
-      Post ["/contact_created"] = _ => {
+      Get ["/contacts/new"] = _ => View ["create_contact.cshtml"];
+      Post ["/contact"] = _ => {
         Contact newContact = new Contact
         (
           Request.Form ["first-name"],
@@ -27,7 +27,7 @@ namespace AddressBook
         List<Contact> newContactList = Contact.GetAll();
         return View ["contacts.cshtml", newContactList];
       };
-      Post ["/contacts_deleted"] = _ => {
+      Post ["/contacts/deleted"] = _ => {
         Contact.DeleteAll();
         return View ["contacts_deleted.cshtml"];
       };
