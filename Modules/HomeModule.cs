@@ -22,13 +22,13 @@ namespace AddressBook
         );
         return View ["contact_created.cshtml", newContact];
       };
-      Get ["/contacts/{id}"] = parameters => {
-        Contact newContact = Contact.Find(parameters.id);
-        return View ["/contact_created.cshtml", newContact];
-      };
       Get ["/contacts"] = _ => {
         List<Contact> newContactList = Contact.GetAll();
         return View ["contacts.cshtml", newContactList];
+      };
+      Get ["/contacts/{id}"] = parameters => {
+        Contact newContact = Contact.Find(parameters.id);
+        return View ["/contact_created.cshtml", newContact];
       };
       Post ["/contacts/deleted"] = _ => {
         Contact.DeleteAll();

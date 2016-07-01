@@ -25,9 +25,10 @@ No known bugs.
 
 The program should ... | Example Input | Example Output
 ----- | ----- | -----
-The program should input new contact information from a form and display it on contact_created.cshtml | "Create a New Contact", First Name: Jane, Last Name: Doe, submit form | "You created a Contact", Name: Jane Doe
-The program should list all new created contacts in a list form on contacts.cshtml | "You Created a Contact", Name: Jane Doe | "Address Book - All Contacts", Name: Jane Doe, ... Name: Judy Cane
-The program should delete all contacts listed on contacts.cshtml and show contacts_deleted.cshtml when the "Delete Entire Address Book" button is clicked on contacts.cshtml | "Address Book - All Contacts", clicked delete all button | "You deleted all your contacts!"
+Input new contact information from a form and display it on contact_created.cshtml | "Create a New Contact", First Name: Jane, Last Name: Doe, submit form | "You created a Contact", Name: Jane Doe
+List all new created contacts in list form on contacts.cshtml | "You Created a Contact", Name: Jane Doe | "Address Book - All Contacts", Name: Jane Doe, ... Name: Judy Cane
+Identify what number contact a contact entry is, and show the number in the url path | "You Created a Contact", Name: Spain, 5th contact in address book | http://localhost:5004/contacts/5
+Delete all contacts listed on contacts.cshtml and show contacts_deleted.cshtml when the "Delete Entire Address Book" button is clicked on contacts.cshtml | "Address Book - All Contacts", clicked delete all button | "You deleted all your contacts!"
 
 ## Future Features
 
