@@ -9,15 +9,17 @@
   <h1 class="page-header">Address Book - All Contacts</h1>
   @foreach (var contact in Model)
   {
-    <h2>@contact.GetFirstName() + " " + @contact.GetLastName()</h2>
-    <ul>
-      <li>@contact.GetPhoneNumber()</li>
-      <li>@contact.GetEmailAddress()</li>
-      <li>@contact.GetStreetAddress() + " " + @contact.GetStateAddress()</li>
-    </ul>
+    <div id="contact-list">
+      <h3>@contact.GetFirstName() @contact.GetLastName()</h3>
+      <ul>
+        <li>Phone Number: @contact.GetPhoneNumber()</li>
+        <li>Email: @contact.GetEmailAddress()</li>
+        <li>@contact.GetStreetAddress(), @contact.GetStateAddress()</li>
+      </ul>
+    </div>
   }
   <h2><a href="/create_contact">Create New Contact</a></h2>
-  <form class="form-group" action="/contacts_deleted" method="post">
+  <form action="/contacts_deleted" method="post">
     <button type="submit" class="btn btn-danger" name="clear-all-btn" id="clear-all-btn">Clear Entire Address Book</button>
   </form>
 </body>
