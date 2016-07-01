@@ -8,7 +8,12 @@
   <title>Address Book</title>
 </head>
 <body>
-  <h1 class="page-header">Welcome to Your Personal Address Book!</h1>
-  <h2><a href="/add_contact">Create a New Contact</a></h2>
+  <h1 class="page-header">You created a contact!</h1>
+  <h2>@Model.GetName()</h2>
+  <ul>
+    <li>@Model.GetPhoneNumber</li>
+    <li>@Model.GetEmailAddress</li>
+    <li>@Model.GetStreetAddress, @Model.GetStateAddress</li>
+  </ul>
   <h2><a href="/contacts">Current Contacts List</a></h2>
 </body>

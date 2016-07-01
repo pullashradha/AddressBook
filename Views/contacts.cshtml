@@ -8,7 +8,17 @@
   <title>Address Book</title>
 </head>
 <body>
-  <h1 class="page-header">Welcome to Your Personal Address Book!</h1>
-  <h2><a href="/add_contact">Create a New Contact</a></h2>
-  <h2><a href="/contacts">Current Contacts List</a></h2>
+  <h1 class="page-header">Address Book - All Contacts</h1>
+  @foreach (var contact in Model)
+  {
+    <h2>@contact.GetName()</h2>
+    <ul>
+      <li>@contact.GetPhoneNumber</li>
+      <li>@contact.GetEmailAddress</li>
+      <li>@contact.GetStreetAddress, @contact.GetStateAddress</li>
+    </ul>
+  }
+  <form class="form-group" action="/contacts_deleted" method="post">
+    <button type="submit" class="btn btn-danger" name="clear-all-btn">Clear Entire Address Book</button>
+  </form>
 </body>

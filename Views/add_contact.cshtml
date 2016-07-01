@@ -1,0 +1,27 @@
+<head>
+<!-- Link Bootstrap, Font Awesome & CSS Start -->
+  <link href="../Content/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../Content/css/bootstrap-social.css" rel="stylesheet" type="text/css">
+  <link href="../Content/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../Content/css/styles.css" rel="stylesheet" type="text/css">
+<!-- Link Bootstrap, Font Awesome & CSS End -->
+  <title>Address Book</title>
+</head>
+<body>
+  <h1 class="page-header">Create a New Contact</h1>
+  <form class="form-group" action="/contact" method="post">
+    <div class="row">
+      <div class="col-xs-6">
+        <p><input required type="text" name="first-name" class="form-control" id="first-name"></p>
+      </div>
+      <div class="col-xs-6">
+        <p><input required type="text" name="last-name" class="form-control" id="last-name"></p>
+      </div>
+    </div>
+    <p><input required type="text" name="phone-number" class="form-control" id="phone-number"></p>
+    <p><input required type="text" name="email-address" class="form-control" id="email-address"></p>
+    <p><input required type="text" name="street-address" class="form-control" id="street-address"></p>
+    <p><input required type="text" name="state-address" class="form-control" id="state-address"></p>
+    <button type="submit" class="btn btn-success" name="add-contact-btn">Create Contact</button>
+  </form>
+</body>
