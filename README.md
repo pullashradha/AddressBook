@@ -27,7 +27,7 @@ The program should ... | Example Input | Example Output
 ----- | ----- | -----
 The program should input new contact information from a form and display it on contact_created.cshtml | "Create a New Contact", First Name: Jane, Last Name: Doe, submit form | "You created a Contact", Name: Jane Doe
 The program should list all new created contacts in a list form on contacts.cshtml | "You Created a Contact", Name: Jane Doe | "Address Book - All Contacts", Name: Jane Doe, ... Name: Judy Cane
-The program should delete all contacts listed on contacts.cshtml and show contacts_deleted.cshtml when the "Clear Entire Address Book" button is clicked on contacts.cshtml | "Address Book - All Contacts", clicked clear all button | "You deleted all your contacts!"
+The program should delete all contacts listed on contacts.cshtml and show contacts_deleted.cshtml when the "Delete Entire Address Book" button is clicked on contacts.cshtml | "Address Book - All Contacts", clicked delete all button | "You deleted all your contacts!"
 
 ## Future Features
 
@@ -44,7 +44,6 @@ Contact Epicodus for support in running this program.
 * HTML
 * CSS
 * Bootstrap
-* Font Awesome
 * C#
 
 ## Links
@@ -53,6 +52,6 @@ Git Hub Repository: https://github.com/pullashradha/AddressBook
 
 ### License
 
-*This software is licensed under the GPL license.*
+*This software is licensed under the Microsoft ASP.NET license.*
 
 Copyright (c) 2016 Shradha Pulla
