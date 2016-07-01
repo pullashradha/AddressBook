@@ -51,7 +51,7 @@ Contact Epicodus for support in running this program.
 
 Git Hub Repository: https://github.com/pullashradha/AddressBook
 
-### License
+## License
 
 *This software is licensed under the Microsoft ASP.NET license.*
 
