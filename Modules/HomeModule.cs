@@ -1,7 +1,6 @@
-using System;
 using Nancy;
-using System.Collections.Generic;
 using AddressBook.Objects;
+using System.Collections.Generic;
 
 namespace AddressBook
 {

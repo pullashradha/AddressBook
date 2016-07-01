@@ -1,4 +1,3 @@
-using System;
 using Nancy;
 using System.Collections.Generic;
 
@@ -25,22 +24,6 @@ namespace AddressBook.Objects
       _stateAddress = stateAddress;
       _fullAddress = fullAddress;
     }
-    public string GetFirstName()
-    {
-      return _firstName;
-    }
-    public void SetFirstName(string newFirstName)
-    {
-      _firstName = newFirstName;
-    }
-    public string GetLastName()
-    {
-      return _lastName;
-    }
-    public void SetLastName(string newLastName)
-    {
-      _lastName = newLastName;
-    }
     public string GetFullName()
     {
       _fullName = (_firstName + " " + _lastName);
@@ -65,22 +48,6 @@ namespace AddressBook.Objects
     public void SetEmailAddress(string newEmailAddress)
     {
       _emailAddress = newEmailAddress;
-    }
-    public string GetStreetAddress()
-    {
-      return _streetAddress;
-    }
-    public void SetStreetAddress(string newStreetAddress)
-    {
-      _streetAddress = newStreetAddress;
-    }
-    public string GetStateAddress()
-    {
-      return _stateAddress;
-    }
-    public void SetStateAddress(string newStateAddress)
-    {
-      _stateAddress = newStateAddress;
     }
     public string GetFullAddress()
     {
