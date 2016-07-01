@@ -9,7 +9,7 @@
   <h1 class="page-header">Address Book - All Contacts</h1>
   @foreach (var contact in Model)
   {
-    <h2>@contact.GetFirstName() + " " + @contactl.GetLastName</h2>
+    <h2>@contact.GetFirstName() + " " + @contact.GetLastName()</h2>
     <ul>
       <li>@contact.GetPhoneNumber()</li>
       <li>@contact.GetEmailAddress()</li>
