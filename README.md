@@ -6,7 +6,7 @@
 
 ## Description
 
-...
+This program is a basic web application designed to allow a user to create multiple new contacts and view them in a list form. Some more functions include being able to delete a singular contact, as well as the entire address book. This software serves as practice to understand basic looping and path creation in C#.
 
 ## Setup/Installation Requirements
 
@@ -23,9 +23,11 @@ No known bugs.
 
 ## Specifications
 
-The program should handle: | Example Input | Example Output
+The program should ... | Example Input | Example Output
 ----- | ----- | -----
-Spec 1 | Example Input: | Example Output:
+The program should input new contact information from a form and display it on contact_created.cshtml | "Create a New Contact", First Name: Jane, Last Name: Doe, submit form | "You created a Contact", Name: Jane Doe
+The program should list all new created contacts in a list form on contacts.cshtml | "You Created a Contact", Name: Jane Doe | "Address Book - All Contacts", Name: Jane Doe, ... Name: Judy Cane
+The program should delete all contacts listed on contacts.cshtml and show contacts_deleted.cshtml when the "Clear Entire Address Book" button is clicked on contacts.cshtml | "Address Book - All Contacts", clicked clear all button | "You deleted all your contacts!"
 
 ## Future Features
 
@@ -47,7 +49,7 @@ Contact Epicodus for support in running this program.
 
 ## Links
 
-Git Hub Repository: https://github.com/pullashradha/
+Git Hub Repository: https://github.com/pullashradha/AddressBook
 
 ### License
 
