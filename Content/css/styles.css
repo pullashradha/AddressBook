@@ -35,7 +35,7 @@ p, li {
   margin-top: 40px;
 }
 
-#add-contact-btn, #clear-all-btn {
+#add-contact-btn, #delete-all-btn {
   font-size: 15pt;
 }
 
@@ -43,7 +43,7 @@ p, li {
   margin-top: 30px;
 }
 
-#clear-all-btn {
+#delete-all-btn {
   margin-left: 38%;
   margin-top: 50px;
   margin-bottom: 50px;

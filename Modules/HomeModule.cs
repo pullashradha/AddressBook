@@ -28,7 +28,7 @@ namespace AddressBook
         return View ["contacts.cshtml", newContactList];
       };
       Post ["/contacts_deleted"] = _ => {
-        Contact.ClearAll();
+        Contact.DeleteAll();
         return View ["contacts_deleted.cshtml"];
       };
     }

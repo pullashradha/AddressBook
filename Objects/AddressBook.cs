@@ -77,7 +77,7 @@ namespace AddressBook.Objects
     {
       _contactsList.Add(this);
     }
-    public static void ClearAll()
+    public static void DeleteAll()
     {
       _contactsList.Clear();
     }
