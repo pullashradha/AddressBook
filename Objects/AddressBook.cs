@@ -11,6 +11,7 @@ namespace AddressBook.Objects
     private string _emailAddress;
     private string _streetAddress;
     private string _stateAddress;
+    private int _id;
     private static List<Contact> _contactsList = new List<Contact> {};
     public Contact (string firstName, string lastName, string phoneNumber, string emailAddress, string streetAddress, string stateAddress)
     {
@@ -20,6 +21,8 @@ namespace AddressBook.Objects
       _emailAddress = emailAddress;
       _streetAddress = streetAddress;
       _stateAddress = stateAddress;
+      _contactsList.Add(this);
+      _id = _contactsList.Count;
     }
     public string GetFirstName()
     {
@@ -69,13 +72,17 @@ namespace AddressBook.Objects
     {
       _stateAddress = newStateAddress;
     }
+    public int GetId()
+    {
+      return _id;
+    }
     public static List<Contact> GetAll()
     {
       return _contactsList;
     }
-    public void Save()
+    public static Contact Find(int searchId)
     {
-      _contactsList.Add(this);
+      return _contactsList[searchId - 1];
     }
     public static void DeleteAll()
     {

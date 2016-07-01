@@ -10,12 +10,14 @@
   @foreach (var contact in Model)
   {
     <div id="contact-list">
-      <h3>@contact.GetFirstName() @contact.GetLastName()</h3>
-      <ul>
-        <li>Phone Number: @contact.GetPhoneNumber()</li>
-        <li>Email: @contact.GetEmailAddress()</li>
-        <li>@contact.GetStreetAddress(), @contact.GetStateAddress()</li>
-      </ul>
+      <a href="/contacts/@contact.GetId()">
+        <h3>@contact.GetFirstName() @contact.GetLastName()</h3>
+        <ul>
+          <li>Phone Number: @contact.GetPhoneNumber()</li>
+          <li>Email: @contact.GetEmailAddress()</li>
+          <li>@contact.GetStreetAddress(), @contact.GetStateAddress()</li>
+        </ul>
+      </a>
     </div>
   }
   <h2><a href="/contacts/new">Create New Contact</a></h2>

@@ -9,7 +9,7 @@ namespace AddressBook
     public HomeModule()
     {
       Get ["/"] = _ => View ["index.cshtml"];
-      Get ["/contacts/new"] = _ => View ["create_contact.cshtml"];
+      Get ["/contacts/new"] = _ => View ["contact_form.cshtml"];
       Post ["/contact"] = _ => {
         Contact newContact = new Contact
         (
@@ -20,8 +20,11 @@ namespace AddressBook
           Request.Form ["street-address"],
           Request.Form ["state-address"]
         );
-        newContact.Save();
         return View ["contact_created.cshtml", newContact];
+      };
+      Get ["/contacts/{id}"] = parameters => {
+        Contact newContact = Contact.Find(parameters.id);
+        return View ["/contact_created.cshtml", newContact];
       };
       Get ["/contacts"] = _ => {
         List<Contact> newContactList = Contact.GetAll();
