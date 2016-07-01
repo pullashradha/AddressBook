@@ -10,10 +10,12 @@
 
 ## Setup/Installation Requirements
 
-* Clone this repository on a PC
+This program can only be accessed on a PC with Windows 10, and with git and atom installed.
+
+* Clone this repository
 * Type following command into the Windows PowerShell > dnu restore
-* Type following command into Powershell > dnx kestrel
-* To view the page, open Chrome and type in the following address: "localhost:5004"
+* Type following command into PowerShell > dnx kestrel
+* Open Chrome and type in the following address: "localhost:5004"
 
 ## Known Bugs
 
@@ -29,7 +31,7 @@ Spec 1 | Example Input: | Example Output:
 
 HTML | CSS | C#
 ----- | ----- | -----
-Example Feature 1 | Example Feature 1 | Example Feature 1
+----- | ----- | -----
 
 ## Support and Contact Details
 

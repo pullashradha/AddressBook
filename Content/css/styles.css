@@ -1,0 +1,23 @@
+body {
+  font-family: serif;
+  color: #000000;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50pt;
+  margin-bottom: 75px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40pt;
+}
+
+p, li {
+  font-size: 13pt;
+}
+
+#add-contact-btn, #clear-all-btn {
+  font-size: 15pt;
+}
