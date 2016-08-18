@@ -23,7 +23,7 @@ No known bugs.
 
 ## Specifications
 
-The program should ... | Example Input | Example Output
+The program should... | Example Input | Example Output
 ----- | ----- | -----
 Input new contact information from a form and display it on contact_created.cshtml | "Create a New Contact", First Name: Jane, Last Name: Doe, submit form | "You created a Contact", Name: Jane Doe
 List all new created contacts in list form on contacts.cshtml | "You Created a Contact", Name: Jane Doe | "Address Book - All Contacts", Name: Jane Doe, ... Name: Judy Cane
@@ -34,7 +34,7 @@ Delete all contacts listed on contacts.cshtml and show contacts_deleted.cshtml w
 
 HTML | CSS | C#
 ----- | ----- | -----
------ | ----- | -----
+--- | --- | ---
 
 ## Support and Contact Details
 
